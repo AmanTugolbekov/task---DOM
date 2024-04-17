@@ -30,7 +30,7 @@ document.body.append(task3);
 // котором пропишите цвет текста blue.
 // Добавьте всем span элементам класс active
 // через document.getElementsByTagName.
-let span = document.querySelectorAll("span");
-span.forEach((elem) => {
-  elem.className = "active";
+let span = document.getElementByTagName("span");
+for (let i = 0; i < span.length; i++){
+  span[i].className = "active";
 });
